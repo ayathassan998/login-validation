@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LogIn form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="container">
+    <h1 class="header">
+        Login Form
+    </h1>
+
+    <form class="login" method="POST" name="form" action="home.html" onsubmit="return validate()">
+        <div class="label">User Name</div>
+        <input type="text" id="username" placeholder="username" />
+        <div class="error_message" id="user_error">
+            Please enter user name
+        </div>
+        <div class="label">password</div>
+        <input type="text" id="password" placeholder="password" />
+        <div class="error_message" id="pass_error">
+            Please enter password
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
